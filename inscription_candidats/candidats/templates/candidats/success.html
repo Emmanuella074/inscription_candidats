@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Succès de l'inscription</title>
+    <link rel="stylesheet" href="{% static 'candidats/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>✅ Inscription réussie !</h1>
+        <p>Merci pour votre inscription. Vous recevrez bientôt un message de confirmation.</p>
+        <a href="{% url 'accueil' %}" class="btn-retour">Retour à l'accueil</a>
+    </div>
+</body>
+</html>

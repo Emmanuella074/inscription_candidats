@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenue sur la plateforme</title>
+    <link rel="stylesheet" href="{% static 'candidats/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">EduPlateforme</div>
+        <nav class="nav">
+            <a href="#">Accueil</a>
+            <a href="#">À propos</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Inscrivez-vous pour un avenir prometteur</h1>
+            <p>Votre parcours commence ici. Rejoignez-nous dès aujourd’hui !</p>
+            <a href="{% url 'inscription' %}" class="btn-inscription">S'inscrire maintenant</a>
+        </div>
+        <div class="hero-img">
+            <img src="{% static 'candidats/hero-image.png' %}" alt="Éducation en ligne">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 EduPlateforme - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
