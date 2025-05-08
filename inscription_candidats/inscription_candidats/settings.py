@@ -7,7 +7,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Sécurité
 SECRET_KEY = 'django-insecure-remplace_moi_par_ton_secret_key'
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '23.20.48.140']
+
+
+
 
 # Applications installées
 INSTALLED_APPS = [
@@ -85,7 +88,7 @@ USE_I18N = True
 USE_TZ = True
 
 # Fichiers statiques (CSS, JS…)
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Fichiers uploadés (extrait de naissance, photo…)
 MEDIA_URL = '/media/'
